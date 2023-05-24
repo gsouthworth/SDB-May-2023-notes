@@ -1,0 +1,76 @@
+/*
+Cascading Style Sheets
+
+Language that dictates style and and positioning of HTML elements
+
+    Ruleset
+
+    Selector {
+        Deceleration;
+        Property: Value;
+        Property: Value;
+        key: Value;
+    }
+*/
+
+/* Box Model */
+
+
+
+/* Wild Card Selector 
+    -will et base line styling (gets rid of pesky margins (tampa website)
+*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+/* Element Selector */
+body {
+    background-color: grey;
+}
+
+#nav-bar {
+    background-color: darkgoldenrod;
+}
+
+.nav-link {
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: red;
+}
+
+/* Compound Selectors */
+body > section > article img {
+    width: 25em;
+    object-fit: cover;
+}
+
+/* 
+    Order of Specificity:
+        1: !important
+        2: in-line styling
+        3: ID Selector
+        4: Class Selector
+        5: element
+*/
+
+#order-of-specificity {
+    border: 2px solid black;
+    width: 1000px;
+    height: 100px;
+    
+    background-color: purple;
+}
+
+div {
+    background-color: red !important;
+}
+
+.order-of-specificity {
+    background-color: blue;
+}
