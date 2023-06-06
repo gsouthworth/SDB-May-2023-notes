@@ -123,3 +123,10 @@ ignition ? console.log("car is on") : console.log("car is off");
     * If you're over 18 you can travel but cannot drink
     * If you're over 21 you can drink alcohol
 */
+
+let name = 'Darth VaDeR'
+
+name.toLowerCase() == 'darth vader' ? console.log("Noooooo! That's impossible!")
+    : name.toLowerCase() == 'lex luthor' ? console.log("Be gone, you villian!!")
+    : name.toLowerCase() = 'luke skywalker' ? console.log("Hello Luke Skywalker")
+    : console.log(`Hello ${name}, Have we met before`)
